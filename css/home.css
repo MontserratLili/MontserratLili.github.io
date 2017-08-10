@@ -1,0 +1,30 @@
+.transicion{
+    position: relative;
+    animation: bienvenido linear 2s;
+}
+@keyframes bienvenido {
+    0% {
+        background-image:url("../assets/imagenes/ball.gif");
+        background-repeat: no-repeat;
+        letter-spacing: 200px}
+}
+.seccionhome{
+    padding: 150px;
+}
+.menu-opciones{
+    margin: 7px 0px 3px 7px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu-opciones:hover{
+    box-shadow: 2px 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px gray;
+}
+ul{
+    margin-top: 50px;
+}
+.home-gif{
+    width: 73%;
+    height: 85%;
+}

@@ -1,0 +1,31 @@
+.habilidades{
+    padding: 150px 50px 50px 50px;
+    background-color: white;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.menuHabilidades{
+    font-size: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 80%;
+    height: 150px;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #999;
+}
+.tarjetas:hover{
+    box-shadow: 10px 10px 10px #999;
+}
+.lista{
+    margin: 0px;
+}

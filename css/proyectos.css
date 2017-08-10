@@ -1,0 +1,40 @@
+.proyectos {
+    background-color: #794092;
+    padding: 50px 100px 100px 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boton {
+    position: fixed;
+    margin-top: 100px;
+}
+
+.titulo {
+    margin: 0 0 50px 500px;
+}
+
+.gal {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+}
+
+.gal img {
+    width: 100%;
+    padding: 7px 0;
+}
+
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+    }
+}
