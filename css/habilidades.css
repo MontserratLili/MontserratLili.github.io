@@ -1,14 +1,11 @@
 .habilidades{
-    padding: 150px 50px 50px 50px;
     background-color: white;
-    height: 900px;
+    padding: 50px;
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-}
-.menuHabilidades{
-    font-size: 20px;
 }
 
 .tarjetas{
@@ -18,14 +15,32 @@
     justify-content: center;
     border: 1px solid black;
     width: 80%;
-    height: 150px;
+    height: 180px;
     padding: 30px;
-    margin: 10px;
+    margin: 30px 30px 0px 30px;
     box-shadow: 2px 2px 5px #999;
 }
 .tarjetas:hover{
     box-shadow: 10px 10px 10px #999;
+} 
+.tarjetasHSE:hover{
+    box-shadow: 10px 10px 10px #999;
 }
-.lista{
+.contenedorLista{
     margin: 0px;
+}
+.botonHabilidades{
+    margin-top: 250px;
+}
+.tarjetasHSE{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 95%;
+    height: 210px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 2px 2px 5px #999;
 }
