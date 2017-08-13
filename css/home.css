@@ -1,6 +1,6 @@
 .transicion{
     position: relative;
-    animation: bienvenido linear 2s;
+    animation: bienvenido linear 3s;
 }
 @keyframes bienvenido {
     0% {
