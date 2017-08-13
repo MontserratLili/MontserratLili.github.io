@@ -4,4 +4,5 @@ $(document).ready(function () {
         location.href = ("#home");
     }, 4000);
     $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.parallax').parallax();
 });
