@@ -33,7 +33,7 @@ ul{
     width: 73%;
     height: 85%;
 }
-@media screen and (max-width: 320px) { 
+@media screen and (max-width: 400px) { 
     .seccion{
         padding: 150px 50px 50px 50px;
         
