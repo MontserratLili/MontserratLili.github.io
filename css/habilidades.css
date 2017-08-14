@@ -64,3 +64,28 @@
 .a{
     display: inline-block;
 }
+
+@media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 25px;
+    }
+    .contenedorLista{
+        margin: 0px;
+        height: auto;
+        display: none;
+    }
+    .listaMovil{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        height: 100px;
+    }
+    .botonHabilidades{
+    margin-top: 0px;
+    }
+    .habilidades{
+    padding: 0px;
+        
+    }
+    
+}

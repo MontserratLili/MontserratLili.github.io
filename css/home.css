@@ -34,19 +34,22 @@ ul{
     height: 85%;
 }
 @media screen and (max-width: 400px) { 
+    #bienvenido{
+        margin-top: 100px;   
+    }
     .seccion{
         padding: 150px 50px 50px 50px;
         
     }
     .seccionhome{
-        padding: 50px 50px 50px 50px;
+        padding: 50px 50px 50px 70px;
     }
     .letra{
         font-size: 30px;
     }
     .home-gif{
-    width: 70%;
-    height: 85%;
+    width: 60%;
+    height: 75%;
     margin: 30px;
-}
+    }
 }

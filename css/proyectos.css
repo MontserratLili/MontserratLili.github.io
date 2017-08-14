@@ -22,3 +22,18 @@
 .tarjetaFormato{
     background-color: rgbA(121, 64, 146, 0.7); 
 }
+
+@media screen and (max-width: 400px) {
+.proyectos{
+    margin: 0px;
+    padding: 20px;
+}
+    .boton {
+    margin: 10px;
+    align-content: center;
+}
+    .titulo {
+    margin: 10px 10px 10px 90px;
+        font-size: 50px;
+}
+}
