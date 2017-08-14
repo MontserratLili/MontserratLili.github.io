@@ -2,12 +2,17 @@
     position: relative;
     animation: bienvenido linear 3s;
 }
+.letra{
+    font-size:100px ;
+}
 @keyframes bienvenido {
     0% {
         background-image:url("../assets/imagenes/ball.gif");
         background-repeat: no-repeat;
-        letter-spacing: 200px}
+        letter-spacing: 200px
+    }
 }
+/**/
 .seccionhome{
     padding: 150px;
 }
@@ -27,4 +32,21 @@ ul{
 .home-gif{
     width: 73%;
     height: 85%;
+}
+@media screen and (max-width: 320px) { 
+    .seccion{
+        padding: 150px 50px 50px 50px;
+        
+    }
+    .seccionhome{
+        padding: 50px 50px 50px 50px;
+    }
+    .letra{
+        font-size: 30px;
+    }
+    .home-gif{
+    width: 70%;
+    height: 85%;
+    margin: 30px;
+}
 }
