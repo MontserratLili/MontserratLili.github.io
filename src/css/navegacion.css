@@ -1,0 +1,74 @@
+/*MENÚ DE NAVEGACIÓN*/
+.navegacion {
+    margin: .5% 10%;
+}
+header .menu {
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 12%;
+    border: none;
+    
+}
+header nav li {
+    margin: 0;
+}
+header nav li a {
+    color: #000000;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 200px;
+}
+header nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+}
+header nav li img {
+    width: 55px;
+    height: 55px;
+}
+header nav li a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.iconosMenu{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+}
+#iconoHelado {
+    background-image: url("../assets/img/iconos-menu/helado-negro.png");
+}
+#iconoHelado:hover {
+    background-image: url("../assets/img/iconos-menu/helado-azul.png");
+}
+#iconoPaleta {
+    background-image: url("../assets/img/iconos-menu/paleta-negra.png");
+}
+#iconoPaleta:hover {
+    background-image: url("../assets/img/iconos-menu/paleta-amarilla.png");
+}
+#iconoCuchillo {
+    background-image: url("../assets/img/iconos-menu/cuchillo-negro.png");
+}
+#iconoCuchillo:hover {
+    background-image: url("../assets/img/iconos-menu/cuchillo-rosa.png");
+}
+#iconoFoco {
+    background-image: url("../assets/img/iconos-menu/foco-negro.png");
+}
+#iconoFoco:hover {
+    background-image: url("../assets/img/iconos-menu/foco-amarillo.png");
+}
+#iconoCopas {
+    background-image: url("../assets/img/iconos-menu/copas-negras.png");
+}
+#iconoCopas:hover {
+    background-image: url("../assets/img/iconos-menu/copas-azules.png");
+}

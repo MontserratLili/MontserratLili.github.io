@@ -1,0 +1,89 @@
+.tituloContacto {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 27%;
+    font-weight: 900;
+}
+.alineacionContacto {
+    margin-top: 30%;
+}
+.textoContacto {
+    font-size: 1.3rem;
+    margin-top: 32%;
+}
+.alineacionTextoContacto {
+    margin-top: 6%;
+}
+.mail{
+    text-decoration: none;
+    color: black;
+}
+.mail:hover{
+    color: white;
+}
+.separacionTextoContacto{
+    margin: 1%;
+}
+#map{
+    width: 83.5%;
+    height: 350px;
+    position: absolute;
+    margin-top: 11%;
+
+}
+/*BOTONES CONTACTO*/
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+   
+}
+.social-network a.icoGitHub:hover {
+	background-color: #00cac9;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#00cac9;
+}
+.social-network a.icoWhatsapp:hover {
+	background-color:#00cac9;
+}
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+  
+}
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.iconosContacto {
+    background-color: #000000; 
+}
