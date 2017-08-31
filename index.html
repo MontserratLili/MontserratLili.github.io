@@ -8,607 +8,412 @@
     <title>Montserrat Lili</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Megrim" rel="stylesheet">
     <!--Conexión con estilos propios-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/proyectos.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/sobreMi.css">
-    <link rel="stylesheet" href="css/habilidades.css">
-    <link rel="stylesheet" href="css/proyectos.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/navegacion.css">
+    <link rel="stylesheet" href="src/css/inicio.css">
+    <link rel="stylesheet" href="src/css/contacto.css">
 </head>
 
 <body>
-    <!--BIENVENIDO-->
-    <section id="bienvenido" class="seccion row seccionhome transicion">
-        <p class="letra">BIENVENIDO</p>
-    </section>
-    <!--PRIMERA SECCIÓN *** HOME-->
-    <section id="home" class="seccion row seccionhome">
-        <div class="col s12 xl7 offset-xl1">
-            <img class="responsive-img" src="assets/imagenes/nombreCompleto.png" alt="">
-            <ul class="col s8 xl4 offset-s3 offset-xl7">
-                <li class="right menu-opciones">
-                    <a class="black-text" href="#sobreMi">| SOBRE MÍ |</a>
+    <!--MENÚ DE NAVEGACIÓN-->
+    <header>
+        <nav class="menu center-align">
+            <ul class="row fuenteMegrim navegacion">
+                <li class="col s1">
+                    <img class="responsive-img" src="src/assets/img/logo-blanco.png" alt="">
                 </li>
-                <li class="right menu-opciones">
-                    <a class="black-text" href="#habilidades">| HABILIDADES |</a>
+                <li class="col s2">
+                    <a href="#inicio">INICIO 
+                        <div id="iconoHelado" class="iconosMenu"></div>
+                    </a>
                 </li>
-                <li class="right menu-opciones">
-                    <a class="black-text" href="#proyectos">| PROYECTOS |</a>
+                <li class="col s2">
+                    <a href="#proyectos">PROYECTOS
+                        <div id="iconoPaleta" class="iconosMenu"></div>
+                    </a>
                 </li>
-                <li class="right menu-opciones">
-                    <a class="black-text" href="#contacto">| CONTACTO |</a>
+                <li class="col s2">
+                    <a href="#habilidades">HABILIDADES
+                        <div id="iconoCuchillo" class="iconosMenu"></div>
+                    </a>
                 </li>
-                <li class="right menu-opciones">
-                    <a class="black-text" target="_blank" href="assets/documentos/MontserratLiliCV.pdf">| MI CV |</a>
+                <li class="col s2">
+                    <a href="#sobreMi">SOBRE MÍ
+                        <div id="iconoCopas" class="iconosMenu"></div>
+                    </a>
+                </li>
+                <li class="col s2">
+                    <a href="#contacto">CONTACTO
+                        <div id="iconoFoco" class="iconosMenu"></div>
+                    </a>
                 </li>
             </ul>
-        </div>
-        <div class="col s11 xl4 offset-s1">
-            <img class="left responsive-img z-depth-5 home-gif" src="assets/imagenes/montserrat.gif" alt="">
-        </div>
+        </nav>
+    </header>
+    <section class="contenedorGeneral">
+        <!--PRIMERA SECCIÓN *** INICIO-->
+        <section id="inicio" class="parallax">
+            <div class="seccion">
+                <img class="backgroundSecciones responsive-img" src="src/assets/img/background-azul2.png" alt="">
+            </div>
+            <h1 class="saludo fuenteMegrim">¡Bienvenido!</h1>
+            <div id="heladoAnimado" class="helado"> 
+                <img class="acomodarHelado imagen responsive-img" src="src/assets/img/helado.png" alt="">
+            </div>
+            <h3 id="minombre"></h3>
+        </section>
+        
+        <!--SEGUNDA SECCIÓN *** PROYECTOS-->
+        <section id="proyectos" class="parallax seccionProyectos">
+            <div class="seccion">
+                <img class="backgroundSecciones responsive-img" src="src/assets/img/background-amarillo.png" alt="">
+            </div>
+              
+            <div class="row contenidoProyectos">
+                <div class="col s3"> 
+                    <h1 class="fuenteMegrim tituloProyectos">Proyectos</h1>
+                   
+                </div>
+                <div class="col s8 offset-s1 tarjetasProyectos">
+                    <div class="col s4">
+                    <!--FIREBASE-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/firebase.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/Firebase---Clase-Ivan/"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/Firebase---Clase-Ivan"> Código</a>
+                                </span>
+                                <p>Base de datos con firebase</p>
+                            </div>
+                        </div>
+                    <!--APPLOVE-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/applove.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/APPLOVE-/"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/APPLOVE-"> Código</a>
+                                </span>
+                                <p>App Love Maquetación con CSS3</p>
+                            </div>
+                        </div>
+                    <!--HANDLEBARS-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/handlebars.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/Handlebars"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/Handlebars"> Código</a>
+                                </span>
+                                <p>Maquetación con Handlebars</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                    <!--ALLINONE-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/allinone.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/All-in-one/"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/All-in-one"> Código</a>
+                                </span>
+                                <p>App con geolocalización, consumo de Api</p>
+                            </div>
+                        </div>
+                    <!--POKEDEX-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/pokedex.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/Pokedex/"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/Pokedex"> Código</a>
+                                </span>
+                                <p>Consumo de Api</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                    <!--VAGANDOANDO
+                       -->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/vagando.ando.gif" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/vagandoAndo/"> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/vagandoAndo"> Código</a>
+                                </span>
+                                <p>Desarrollo colaborativo en GitHub</p>
+                            </div>
+                        </div>
+                    <!--TRIANGLE-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="src/assets/img/proyectos/sprint7.png" alt="Base de datos con Firebase">
+                            </div>
+                            <div class="card-content tarjetaFormato">
+                                <span>
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://montserratlili.github.io/Proyecto-Sprint-7/."> Demo</a>
+                                </span>
+                                <span>
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <a target="_blank" class="link" href="https://github.com/MontserratLili/Proyecto-Sprint-7"> Código</a>
+                                </span>
+                                <p>Proyecto realizado con Pug</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!--TERCERA SECCIÓN *** HABILIDADES-->
+        <section id="habilidades" class="parallax extra">
+            <div class="seccion">
+                <img class="backgroundSecciones responsive-img" src="src/assets/img/backgroung-rombo-rosa.png" alt="">
+            </div>
+            <h2 class="tituloHabilidades fuenteMegrim">Habilidades</h2>
+            <div class="contenidoHabilidades row center-align alineacionHabilidades">
+                <div class="col s6 offset-s3">
+                    <div class="col s2 offset-s1">
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>HTML5 <br> Intermedio</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/html5.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>CSS3 <br>Intermedio </p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/css3.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>JavaScript <br>Intermedio </p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/js.png">
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>React <br> Básico</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/react.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Bootstrap<br>Intermedio <p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/bootstrap.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Materialize<br>Intermedio</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/materialize.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>NodeJs<br>Básico</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/nodejs.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>jQuery <br>Básico </p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/jquery.png">
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Git<br>Intermedio </p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/git.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>GitHub<br>Intermedio</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/github.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Gulp<br>Intermedio</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/gulp.png">
+                        </div>
+                    </div>
+                    <div class="col s2">
+                         <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>SASS<br>Básico</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/sass.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Pug<br>Intermedio</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/pug.png">
+                        </div>
+                        <div class="img_thumb">
+                            <div class="img_desc">
+                                <p>Handlebars<br>Básico</p>
+                            </div>
+                            <img class="responsive-img" src="src/assets/img/habilidades/tecnicas/handlebars.png">
+                        </div>
+                    </div> 
+                                            <div class="col s2">
+                             <div class="img_thumb">
+                                    <div class="img_desc">
+                                        <p>Metodología Agile</p>
+                                    </div>
+                                    <img class="responsive-img" src="src/assets/img/habilidades/otras/agile.png">
+                            </div>
+                            <div class="img_thumb">
+                                    <div class="img_desc">
+                                        <p>Illustrator<br>Básico</p>
+                                    </div>
+                                    <img class="responsive-img" src="src/assets/img/habilidades/otras/illustrator.png">
+                            </div>
+                            <div class="img_thumb">
+                                    <div class="img_desc">
+                                        <p>Photoshop<br>Básico</p>
+                                    </div>
+                                    <img class="responsive-img" src="src/assets/img/habilidades/otras/photoshop.jpg">
+                            </div>
+                        </div> 
+                </div>    
+            </div>
+        </section>
+        
+        <!--CUARTA SECCIÓN *** SOBRE MÍ-->
+        <section id="sobreMi" class="parallax extra">
+            <div class="seccion">
+                <img class="backgroundSecciones responsive-img" src="src/assets/img/background-desnivel-azul.png" alt="">
+            </div>
+            <h2 class="tituloSobreMi fuenteMegrim">Sobre Mí</h2>
+            <div class="row">
+                <div class="col s5 offset-s1 textoSobreMi">
+                    <p>¡Hola!</p> 
+                    <p>Soy Laura Montserrat Lili González <i class="fa fa-smile-o white-text" aria-hidden="true"></i>, me encanta bailar, la tecnología, el cine y la música. Soy egresada de la UAM-I como Licenciada en Administración <i class="fa fa-graduation-cap white-text" aria-hidden="true"></i>. Tengo 3 años de experiencia como administradora, en los cuales he desarrollado habilidades y fortalecido aptitudes para mi crecimiento profesional y personal. Actualmente, soy egresada de la cuarta generación de Laboratoria como Desarrolladora Web Front-End <i class="fa fa-code white-text" aria-hidden="true"></i>, apasionada por el código y la tecnología, siempre con la firme idea de que programando podemos hacer de este un mundo mejor<i class="fa fa-globe white-text" aria-hidden="true"></i>.</p>
+                </div>
+                <img class="col s3 offset-s7 miFoto responsive-img" src="src/assets/img/yo.jpg" alt="">
+            </div>
+        </section>
+        
+        <!--QUINTA SECCIÓN *** CONTACTO-->
+        <section id="contacto" class="parallax extra row">
+            <div class="seccion">
+                <img class="backgroundSecciones responsive-img" src="src/assets/img/background-amarillo-fin.png" alt="">
+            </div>
+            <h2 class="saludo fuenteMegrim tituloContacto">¡Trabajemos Juntos!</h2>
+            
+            <div class="contenidoProyectos col s6 center-align">
+                <div class="row">
+                    <div class="textoContacto col s6 offset-s3">
+                        <button class="btn black waves-effect waves-light alineacionTextoContacto textoContacto separacionTextoContacto" type="button" title="Descarga mi CV">
+                            <a  target="_blank" href="src/assets/doc/CV-MontserratLili.pdf" class="white-text">
+                                <i class="fa fa-download" aria-hidden="true"></i> Mi CV
+                            </a>
+                        </button><br>
+                        <p class="separacionTextoContacto"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Laura Montserrat Lili González</p>
+                        <p class="separacionTextoContacto"><i class="fa fa-phone" aria-hidden="true"></i> (044) 55 17928970</p>
+                        <p class="separacionTextoContacto"><i class="fa fa-map-marker" aria-hidden="true"></i> Iztapalapa, CDMX.</p>
+                        <p class="separacionTextoContacto">
+                            <a class="mail"  target="_blank" href="mailto:lauraliligm@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> lauraliligm@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="col s6 offset-s3 separacionTextoContacto">
+                        <ul class="social-network social-circle">
+                            <li>
+                                <a target="_blank" href="https://github.com/MontserratLili" class="icoGitHub iconosContacto" title="Github">
+                                    <i class="fa fa-github-alt fa-1x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank"  href="https://www.linkedin.com/in/montserrat-lili/" class="icoLinkedin iconosContacto" title="Linkedin">
+                                        <i class="fa fa-linkedin fa-1x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=5215517928970" class="icoWhatsapp iconosContacto" title="Whatsapp">
+                                        <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contenidoProyectos col s6  center-align alineacionTextoContacto">
+                <div id="map"></div>
+            </div>
+        </section>
+        <footer class="alineacionFooter">
+            <p>Laura Montserrat Lili González©<span class="claro"> | </span> México, 2017 <span class="claro"> | </span> Laboratoria <i class="fa fa-code" aria-hidden="true"></i></p>
+        </footer>
     </section>
-    <!--SEGUNDA SECCIÓN *** SOBRE MÍ-->
-    <section id="sobreMi" class="seccion row sobreMi white-text">
-        <div class="col s3 xl1">
-            <a class="teal-text botonSM" href="#home">
-                <i class="medium material-icons pulse white circle">keyboard_arrow_left</i>
-            </a>
-        </div>
-        <div class="col s9 xl3">
-            <img class="responsive-img fotoSobreMi" src="assets/imagenes/yo.jpg" alt="">
-        </div>
-        <div class="col s11 xl6">
-            <h3 class="hola">¡Hola!</h3>
-            <p class="texto">Soy Montserrat Lili, Administradora de profesión, Programadora por vocación. Egresada de la cuarta generación de Laboratoria, me encanta la tecnología y el impacto que tiene el código en la vida de las personas.</p><br>
-            <p class="texto"><i>"Programando podemos crear un mundo mejor."</i></p>
-        </div>
-    </section>
-    <!--TERCERA SECCIÓN *** HABILIDADES-->
-    <section id="habilidades" class="seccion row black-text h">
-        <div class="col s1 botonHabilidades">
-            <a class="white-text" href="#home">
-                <i class="medium material-icons pulse black circle">keyboard_arrow_left</i>
-            </a>
-        </div>
-        <!--
-        <a class="black-text" href="#OH">
-            <i class="a small material-icons">keyboard_arrow_left</i>
-        </a>
-        <a class="black-text" href="#HSE">
-            <i class="a small material-icons">keyboard_arrow_right</i>
-        </a>-->
-        <div class="col s11 carousel carousel-slider center habilidades">   
-            <div id="uno" class="carousel-item black-text row" href="#one!">
-                <h1 id="HT" class="col s11 offset-s1 espaciado">Habilidades Técnicas</h1>
-                <div class="contenedorLista">
-                    <h2 class="espaciado">Intermedio</h2>  
-                    <ul class="row lista">
-                        <li class="col s2 offset-s1 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/bootstrap.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Bootstrap</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/css3.png" alt="">
-                                </div>
-                                <h5 class="habilidad">CSS3</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/git.png" alt="">
-                                </div>
-                                <h5 class="habilidad"><span class="white-text">++</span>Git<span class="white-text">++</span></h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/github.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Github</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/html5.png" alt="">
-                                </div>
-                                <h5 class="habilidad">HTML5</h5>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="row lista">
-                        <li class="col s2 offset-s3 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/javascript.png" alt="">
-                                </div>
-                                <h5 class="habilidad">JavaScript</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/materialize.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Materialize</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/sass.png" alt="">
-                                </div>
-                                <h5 class="habilidad">SASS</h5>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="row lista aire">
-                        <h2 class="espaciado">Básico</h2> 
-                        <li class="col s2 offset-s1 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/api.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Consumo</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/flexbox.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Flexbox</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/gulp.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Gulp</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/prog-jquery_icon-icons.com_50790.png" alt="">
-                                </div>
-                                <h5 class="habilidad">jQuery</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/mysql.png" alt="">
-                                </div>
-                                <h5 class="habilidad">MySQL</h5>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="row lista">
-                        <li class="col s2 offset-s1 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/node.png" alt="">
-                                </div>
-                                <h5 class="habilidad">NodeJS</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/npm.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Npm</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/php.png" alt="">
-                                </div>
-                                <h5 class="habilidad">PHP</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/pug.png" alt="">
-                                </div>
-                                <h5 class="habilidad">Pug</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetas">
-                                <div class="imagen">
-                                    <img class="responsive-img" src="assets/imagenes/habilidadesTecnicas/react.png" alt="">
-                                </div>
-                                <h5 class="habilidad">React</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="carousel-item black-text habilidades" href="#two!">
-                <h1 id="HSE" class="a col s11 offset-s1 espaciado">Habilidades Socio-Emocionales</h1>
-                <div class="contenedorLista">
-                    <ul class="row lista">
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/asertividad.png" alt="">
-                                <h5 class="">Asertividad</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/cambio.png" alt="">
-                                <h5 class="">Adaptación al cambio</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/aprendizaje.png" alt="">
-                                <h5 class="">Actitud de aprendizaje</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/empatia.png" alt="">
-                                <h5 class="">Empatía</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/trabajo-en-equipo.png" alt="">
-                                <h5 class="">Trabajo en equipo</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesHSE/proactividad.png" alt="">
-                                <h5 class="">Proactividad</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="carousel-item black-text habilidades" href="#three!">
-                <h1 id="HT" class="a col s11 offset-s1 espaciado">Otras Habilidades</h1>
-                <div class="contenedorLista">
-                    <ul class="row lista">
-                        <li class="col s2 offset-s1 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesProductividad/ai.jpg" alt="">
-                                <h5 class="">illustrator</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesProductividad/psd.jpg" alt="">
-                                <h5 class="">photoshop</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesProductividad/Aspel.jpg" alt="">
-                                <h5 class="">Aspel</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesProductividad/agile.jpg" alt="">
-                                <h5 class="">Agile</h5>
-                            </div>
-                        </li>
-                        <li class="col s2 espaciado">
-                            <div class="tarjetasHSE">
-                                <img class="responsive-img" src="assets/imagenes/habilidadesProductividad/Office.png" alt="">
-                                <h5 class="">Microsoft Office</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--CUARTA SECCIÓN *** PROYECTOS-->
-    <section id="proyectos" class="proyectos white-text">
-        <div class="row">
-            <h2 class="titulo">Proyectos</h2>
-        </div>
-        <div class="row">
-            <div class="col s12 xl1 boton">
-                <a class="purple-text " href="#home">
-                    <i class="medium material-icons pulse white circle">keyboard_arrow_left</i>
-                </a>
-            </div>
-            <div class="col s10 xl3 offset-s1 offset-xl1">
-               <!--FIREBASE-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/firebase.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Base de Datos con Firebase
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/Firebase---Clase-Ivan/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Firebase---Clase-Ivan"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Base de Datos con Firebase
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">En este proyecto se implemento una base de datos en la que se insertan distintos campos como nombre, correo electrónico y contraseña. Dichos datos se almacenan en el servicio de base de datos de Firebase, que se sincroniza en tiempo real aprovechando la infraestructura de Google.</p>
-                    </div>
-                </div>
-                <!--HANDLEBARS-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/handlebars.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Replicando diseño con Handlebars
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Handlebars"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Handlebars"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Replicando diseño con Handlebars
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Replicando el diseño de un menú de opciones de suscripción usando el sistema de plantíllas Handlebars para la optimización del código en HTML.</p>
-                    </div>
-                </div>
-                <!--POKEMON-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/pokedex.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Consumo de APi Pokemon mediante peticiones AJAX con jQuery
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/Firebase---Clase-Ivan/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Firebase---Clase-Ivan"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Consumo de APi Pokemon mediante peticiones AJAX con jQuery
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Para desarrollar este proyecto se consumió la APi Pokemon mediante peticiones AJAX con jQuery logrando mostrar detalles de cada pokemon en un modal.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s10 xl3 offset-s1">
-                <!--VAGANDOANDO-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/vagando.ando.gif" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Proyecto colaborativo en Github VagandoANDO
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                        <i class="link fa fa-television" aria-hidden="true"></i>
-                        <a target="_blank" class="link" href="https://montserratlili.github.io/vagandoAndo/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/vagandoAndo"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Proyecto colaborativo en Github VagandoANDO
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">En este proyecto se implemento una base de datos en la que se insertan distintos campos como nombre, correo electrónico y contraseña. Dichos datos se almacenan en el servicio de base de datos de Firebase, que se sincroniza en tiempo real aprovechando la infraestructura de Google.</p>
-                    </div>
-                </div>
-                <!--ALL IN ONE-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/allinone.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Garnachas cerca con Google Maps API
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/All-in-one/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/All-in-one"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Garnachas cerca con Google Maps API
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Creación de una App que indiqué con base en la ubicación del usuario, que lugares de comida garnachera típica de la CDMX tiene cerca para comer. Se realizó l consumo de la API de google Maps para cumplir el objetivo.</p>
-                    </div>
-                </div>
-                <!--KATARRO-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/kv.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Mi banda favorita
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/Enfoque-de-Disenio-2/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Enfoque-de-Disenio-2"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Mi banda favorita
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Desarrollo de landing page aplicando los conocimientos adquiridos hasta el momento de su desarrollo (HTML5, CSS3, JS y diseño responsive CSS) reflejando un poco de mi personalidad, en este caso mi amor hacia la música y mi banda favorita.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s10 xl3 offset-s1">
-                <!--PUG-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/sprint7.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">Landing Pages con Pug JS
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/Proyecto-Sprint-7/."> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/Proyecto-Sprint-7"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">Landing Pages con Pug JS
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Desarrollo de 5 Landing Pages en las cuales se utilizó Pug JS para optimizar la creación de plantillas y código HTML, incluyendo el framework de Bootstrapt.</p>
-                    </div>
-                </div>
-                <!--APPLOVE-->
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/imagenes/vistasProyectos/applove.png" alt="Proyecto con Firebase">
-                    </div>
-                    <div class="card-content tarjetaFormato">
-                        <span class="card-title activator">App Love<i class="material-icons right">more_vert</i></span>
-                        <p>
-                            <i class="link fa fa-television" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://montserratlili.github.io/APPLOVE-/"> Proyecto</a>
-                        </p>
-                        <p>
-                            <i class="link fa fa-github" aria-hidden="true"></i>
-                            <a target="_blank" class="link" href="https://github.com/MontserratLili/APPLOVE-"> Github</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title purple-text text-darken-4">App Love
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p class="purple-text text-darken-4">Creando una landing page con funcionalidad (JS) en un catálogo de productos, muestra el detalle de cada producto con un modal.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--QUINTA SECCIÓN *** CONTACTO-->
-    <section id="contacto" class="seccion row contacto black-text center">
-        <div class="col s1 xl1">
-            <a class="white-text " href="#home">
-                <i class="medium material-icons pulse black circle">keyboard_arrow_left</i>
-            </a>
-        </div>
-        <div class="col s11 xl11">
-            <h2 class="">Trabajemos Juntos!</h2>
-            <button class="btn black waves-effect waves-light datosContacto" type="button" title="Descarga mi CV"><a  target="_blank" href="assets/documentos/MontserratLiliCV.pdf" class="white-text">Mi CV</a></button><br>
-            <div class="">
-                <h5>Montserrat Lili</h5>
-                <h5>(+52) 04455 17928970</h5>
-                <h5>Oriente de la Ciudad de México</h5>
-                <h5><a target="_blank" href="mailto:lauraliligm@gmail.com">lauraliligm@gmail.com</a></h5>
-            </div>
-            <div class="datosContacto">
-                <ul class="social-network social-circle">
-                    <li>
-                        <a target="_blank" href="https://github.com/MontserratLili" class="icoRss iconosContacto" title="Github">
-                            <i class="fa fa-github-alt fa-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank"  href="https://www.linkedin.com/in/montserrat-lili/" class="icoFacebook iconosContacto" title="Linkedin">
-                            <i class="fa fa-linkedin fa-1x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="#" class="icoTwitter iconosContacto" title="Skype">
-                            <i class="fa fa-skype fa-1x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!--
-            <form class="formulario" action="mailto:lauraliligm@gmail.com">
-                <div class="">
-                    <label class="fuente">Nombre</label>
-                    <input type="text" class="fuente" id="" placeholder="Ingresa tú nombre">
-                </div>
-                <div class="">
-                    <label class="fuente">E-mail</label>
-                    <input type="email" class="fuente" id="" placeholder="Ingresa tú e-mail">
-                </div>
-                <div class="">
-                    <label class="fuente">Número de contácto</label>
-                    <input type="tel" class="fuente" id="" placeholder="Ingresa tú número">
-                </div>
-                <div class="">
-                    <label class="fuente">Mensaje</label>
-                    <textarea class="fuente" id="" placeholder="Ingresa tú mensaje"></textarea>
-                </div>
-                <div>
-                    <button type="button" class="btn submit"><i class="large material-icons">send</i>  Envía Mensaje</button>
-                </div>
-            </form>-->
-        </div>
-    </section>
-    <section class="row footer center">
-        <footer class="col s11 xl11 offset-s1 offset-xl1">Montserrat Lili | Laboratoria | Agosto 2017</footer>
-    </section>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR9yTM2oyJCb3hrvOmxBoG2Mor0KmCppE&callback=initMap">
+    </script>
+   <!-- Compiled and minified JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/a2f6b316cb.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
+    
+    <script src="src/js/app.js"></script>
+    <script src="src/js/mapa.js"></script>
+    
 </body>
 
 </html>
